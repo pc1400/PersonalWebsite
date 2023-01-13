@@ -1,0 +1,60 @@
+*{
+  padding: 0;
+  margin: 0;
+  scroll-padding-top: 45px;
+}
+
+body{
+  overflow-x: hidden;
+}
+
+h1 {
+  text-align: center;
+}
+
+ul{
+  list-style-type: none;
+  overflow: hidden;
+  background-color: #333;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+li{
+  float: right;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111;
+}
+
+section{
+  display: inline-block;
+  height: 70%;
+  width: 100%;
+}
+
+#project-section{
+  margin-top: 45px;
+  background-color: grey;
+  height: 1000px;
+}
+
+#research-section{
+  background-color: red;
+  height: 1000px;
+}
+
+#about-section{
+  background-color: blue;
+  height: 1000px;
+}
