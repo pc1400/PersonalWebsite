@@ -1,6 +1,7 @@
 *{
   padding: 0;
   margin: 0;
+  color: black;
   scroll-padding-top: 45px;
   font-family: "helvetica";
 }
@@ -9,16 +10,8 @@ body{
   overflow-x: hidden;
 }
 
-h1, h2{
+h1{
   text-align: center;
-}
-
-h2 a{
-  color: black;
-}
-
-h2 a:hover{
-  color: blue;
 }
 
 p{
@@ -31,28 +24,24 @@ ul{
   position: fixed;
   top: 0;
   width: 100%;
-  background-color: black;
+  background-color: white;
 }
 
 li{
   float: right;
-  font-weight: bold;
 }
 
 li a {
-  color: white;
+  font-weight: 100;
   display: block;
-  text-align: center;
   padding: 14px 16px;
-  text-decoration: none;
-}
-
-a{
-  text-decoration: none;
+  text-decoration: underline 0.10em rgba(0, 0, 0, 0);
+  transition: text-decoration-color 350ms;
+  text-underline-offset: 0.4em;
 }
 
 li a:hover {
-  color: #FE6B35;
+  text-decoration-color: rgba(0, 0, 0, 1);
 }
 
 section{
@@ -61,59 +50,142 @@ section{
   width: 100%;
 }
 
-#project{
-  margin-top: 45px;
-  height: 1000px;
-  background-color: bisque;
-}
+
 
 #about{
+  background-color: white;
   height: auto;
-  background-color: aqua;
+}
+
+.first-half{
+  margin-bottom: 100px;
+}
+
+.introduction{
+  float:right;
+  margin-right: 300px;
+  width: 400px;
+}
+
+img{
+  margin-left: 200px;
+  margin-top: 50px;
+}
+
+.introduction h1{
+  font-weight: 500;
+  text-align: left;
+  margin-top: 70px;
+  color: black;
+}
+
+.introduction h3{
+  font-weight: 300;
+  color: black;
+}
+
+.introduction p{
+  font-weight: 100;
 }
 
 #contact{
-  height: auto;
-  background-color: #FE6B35;
+  height: 400px;
+  /* background-color: #fafafa; */
+  background-color: white;
+}
+
+.contact{
+  font-size: 75px;
+  font-weight: 100;
+  text-align: left;
+  margin-left: 100px;
+  margin-top: 50px;
+  text-decoration: underline 0.05em rgba(0, 0, 0, 1);
+  text-underline-offset: 0.2em;
+}
+
+h2{
+  font-weight: 100;
+  margin-left: 100px;
+  margin-top: 25px;
+}
+
+h2 a{
+  text-decoration: none;
+  transition: color 350ms;
+}
+
+h2 a:hover{
+  color: #e04b43;
+}
+
+.fa-envelope{
+  font-size:4px
+}
+
+.linkedin:hover{
+  color:#0072B1;
+}
+
+.github:hover{
+  color:#3fb64f;
+}
+
+
+footer{
+  font-weight: 100;
+  background-color: white;
+  margin: 20px auto;
+  margin-top: 60;
+  text-align: center;
 }
 
 #blog{
   height: auto;
-  background-color: #eee;
+  margin-bottom: 60px;
+}
+
+button{
+  transition: width 1000ms;
 }
 
 .collapsible {
-  background-color: #eee;
-  color: #444;
+  background-color: white;
   cursor: pointer;
-  padding: 18px;
-  width: 100%;
+  padding: 25px;
   border: none;
   text-align: left;
   outline: none;
-  font-size: 15px;
-}
-
-.active, .collapsible:hover {
-  background-color: #ccc;
+  font-weight: 200;
+  font-size: 30px;
+  text-decoration: underline 0.1em rgba(0, 0, 0, 1);
+  text-underline-offset: 0.4em;
+  transition: color 400ms, background-color 400ms, text-decoration-color 400ms;
   width: 100%;
 }
 
-.content {
-  padding: 0 18px;
-  transition: max-height 0.5s ease-out;
-  max-height: 0px;
-  overflow: hidden;
-  color: white;
+.active, .collapsible:hover {
   background-color: black;
+  text-decoration-color: white;
+  color: white;
+}
+
+.content {
+  background-color: white;
+  font-weight: 100;
+  transition: max-height 0.35s ease-out;
+  max-height: 0px;
+  width: 50%;
+  overflow: hidden;
 }
 
 .left{
   float: left;
+  margin-left: 200px;
 }
 
 .right{
-  margin-right: 10px;
+  margin-right: 200px;
   float: right;
 }
 
@@ -122,12 +194,90 @@ section{
   margin-bottom: 20;
 }
 
+.cv{
+  background-color: white;
+  border: 1.5px solid black;
+  width: 150px;
+  height: 40px;
+  margin-top: 25px;
+  font-size: 15px;
+  font-weight: 100;
+  padding: auto;
+  margin-left: auto;
+  color: black;
+  cursor: pointer;
+  transition: color 300ms, border-color 300ms;
+}
+
+.cv:hover{
+  color: #ef1a25;
+  border-color: #ef1a25;
+}
+
 hr {
   width: 10000px;
   position: absolute;
 }
 
-.introduction{
-  float:right;
-  width: 200px;
+i{
+  margin-left: -2px;
+  transition: color 350ms;
+}
+
+.fa-envelope:hover{
+  color:#e04b43;
+}
+
+.fa-linkedin-square:hover{
+  color:#0072B1;
+}
+
+.fa-github:hover{
+  color:#3fb64f;
+}
+
+.machineVideo{
+  float: right;
+}
+
+.pokerVideo{
+  float: left;
+}
+
+.square {
+  margin-top: 100px;
+  margin-left: 10%;
+  height: 500px;
+  width: 500px;
+  background-color: white;
+  border: 2px solid black;
+  ;
+}
+
+#project{
+  margin-top: 45px;
+  margin-bottom: 45px;
+  height: 1000px;
+}
+
+.box2{
+  height: 200px;
+  width: 300px;
+  border: 1px solid black;
+  display: block;
+  float: left;
+  margin-top: 50px;
+  margin-bottom: 20px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.box2-h2{
+  text-align: center;
+  padding: 20px;
+  margin: auto;
+}
+.projectBoxes{
+  display: flex;
+  justify-content: center;
 }

@@ -5,14 +5,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
 
   <div class="navigation-bar" id="top">
     <ul>
       <li><a href="#contact">Contact</a></li>
-      <li><a href="#about">About</a></li>
       <li><a href="#blog">Blog</a></li>
+      <li><a href="#about">About</a></li>
       <li><a href="#project">Projects</a></li>
       <li style="float:left;"><a href="#top">Patrick Cunningham</a></li>
     </ul>
@@ -20,46 +21,76 @@
 
   <section id="project">
     <h1>Projects</h1>
-    <h3>Machine Learning Mobile App</h3>
-    <iframe width="420" height="345" 
-      src="https://www.youtube.com/embed/UXeodcCkmJk">
-    </iframe>
-    <h3>Poker Game</h3>
-    <iframe width="420" height="345" 
-      src="https://www.youtube.com/embed/uWpSVAkK-sU">
-    </iframe>
+    <div class="projectBoxes">
+      <div class="box2">
+        <h2 class="box2-h2">Machine Learning Mobile App</h2>
+      </div>
+      <div class="box2 one">
+        <h2 class="box2-h2">Poker Game</h2>
+      </div>
+    </div>
+
+    <div class="projectBoxes">
+      <div class="box2 two">
+        <h2 class="box2-h2">Automated Criminal Record Summary</h2>
+      </div>
+      <div class="box2 three">
+        <h2 class="box2-h2">Automated Scheduling Software</h2>
+      </div>
+    </div>
+    
+    <!-- <section class="machine">
+      <h3>Machine Learning Mobile App</h3>
+      <iframe class = "machineVideo" width="420" height="345" 
+        src="https://www.youtube.com/embed/UXeodcCkmJk">
+      </iframe>
+    </section>
+
+    <section class="poker">
+      <h3>Poker Game</h3>
+      <iframe class = "pokerVideo" width="420" height="345" 
+        src="https://www.youtube.com/embed/uWpSVAkK-sU">
+      </iframe>
+    </section>
+    
+    
     <h3>Automated Criminal Record Summary</h3>
-    <h3>Automated Scheduling Software</h3>
+    <h3>Automated Scheduling Software</h3> -->
   </section>
 
   <section id="about">
-    <h1>About</h1>
-    <img src="assets/Profile1.jpeg" alt="Picture of Patrick Cunningham">
-    <div class="introduction">
-      <p>
-        Little intro, hi! Im patrick Cunningham, 
-        I am a sophomre studying Computer Science at UIUC! I love programming, 
-        machine learning, web design, and the Chicago Bearss
-      </p>
+
+    <div class="first-half">
+      <img src="assets/Profile1.jpeg" alt="Picture of Patrick Cunningham">
+      <div class="introduction">
+        <h1 class="about-h1">Patrick Cunningham</h1>
+        <h3 class="about-h3" style="color:black;">Software Engineer</h3>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et 
+          dolore magna aliqua. Tristique nulla aliquet enim tortor at. 
+          <br><br>
+          At varius vel pharetra vel turpis nunc eget lorem. Sit amet est placerat in egestas. Eget mi proin 
+          sed libero enim.
+          <br><br>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor rem labore sit voluptatibus facilis 
+          repellendus a adipisci? Harum, distinctio sed. Accusamus vel asperiores necessitatibus ut nemo alias saepe. 
+        </p>
+        <a href="assets/resume.pdf" download><button class="cv">Download Resume</button></a>
+      </div>
     </div>
     
 
-    <div class="resume">
-      <h2>Resume At a Glance</h2>
+    <!-- <div class="resume">
 
       <div class="education left">
         <h3>Education</h3>
         <p>Bachelor of Science in Computer Science</p>
-        <hr>
         <h3>Undergraduate Researcher</h3>
         <p>Subsonic Wind Tunnel/Inverted Pendulum Control Experiment</p>
-        <hr>
         <h3>Coarse Assistant</h3>
         <p>Teaching students the basics of Java</p>
-        <hr>
       </div>
         
-
       <div class="education right">
         <h3>University of Illinois at Urbana-Champaign</h3>
         <p>May, 2025</p>
@@ -68,30 +99,13 @@
         <h3>University of Illinois at Urbana-Champaign</h3>
         <p>CS124</p>
       </div>
-
-    </div>
+    </div> -->
     
   </section>
 
   <section id="blog">
-    <h1>What I'm thinking about</h1>
     <div class="post">
-      <button type="button" class="collapsible">Post 1</button>
-      <div class="content">
-        <p style="text-align: left">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-          sed do eiusmod tempor incididunt ut labore et dolore magna 
-          aliqua. Ut enim ad minim veniam, quis nostrud exercitation 
-          ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis 
-          aute irure dolor in reprehenderit in voluptate velit esse cillum
-          dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat 
-          non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-        </p>
-      </div>
-    </div>
-    
-    <div class="post">
-      <button type="button" class="collapsible">Post 2</button>
+      <button type="button" class="collapsible open closed">Building a Website</button>
       <div class="content">
         <p style="text-align: left">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
@@ -106,7 +120,37 @@
     </div>
 
     <div class="post">
-      <button type="button" class="collapsible">Post 3</button>
+      <button type="button" class="collapsible">Semester Three</button>
+      <div class="content">
+        <p style="text-align: left">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+          sed do eiusmod tempor incididunt ut labore et dolore magna 
+          aliqua. Ut enim ad minim veniam, quis nostrud exercitation 
+          ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis 
+          aute irure dolor in reprehenderit in voluptate velit esse cillum
+          dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat 
+          non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+      </div>
+    </div>
+
+    <div class="post">
+      <button type="button" class="collapsible">Semester Two</button>
+      <div class="content">
+        <p style="text-align: left">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+          sed do eiusmod tempor incididunt ut labore et dolore magna 
+          aliqua. Ut enim ad minim veniam, quis nostrud exercitation 
+          ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis 
+          aute irure dolor in reprehenderit in voluptate velit esse cillum
+          dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat 
+          non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+      </div>
+    </div>
+
+    <div class="post">
+      <button type="button" class="collapsible">Semester One</button>
       <div class="content">
         <p style="text-align: left">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
@@ -122,12 +166,16 @@
   </section>
 
   <section id="contact">
-    <h1>Contact</h1>
-    <h2><a href="">patrickmcunnin@gmail.com</a></h2>
-    <h2><a href="https://www.linkedin.com/in/patrckcunningham/" target="_blank">Linkedin</a></h2>
-    <h2><a href="https://github.com/pc1400"  target="_blank">GitHub</a></h2>
+    <h1 class="contact">Contact</h1>
+    <h2><a class="gmail" href="">patrickmcunnin@gmail.com <i class="fa fa-envelope" style="font-size:20px"></i></a></h2>
+    <h2><a class="linkedin" href="https://www.linkedin.com/in/patrckcunningham/" target="_blank">Linkedin <i class="fa fa-linkedin-square"></i></a></h2>
+    <h2><a class="github" href="https://github.com/pc1400" target="_blank">GitHub <i class="fa fa-github"></i></a></h2>
+
+    <footer>
+      <p class="copyright">© 2022 | Created by Patrick Cunningham</p>
+    </footer>
   </section>
-  
+
 </body>
 <script src="app.js"></script>
 </html>
